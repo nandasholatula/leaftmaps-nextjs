@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const DistanceCalculator = ({ position1, position2 }) => {
-    const pricePerKm = 6000; // Price per kilometer in IDR
+    const pricePerKm = 3000; // Price per kilometer in IDR
 
     if (!position1 || !position2) return null;
 
@@ -32,7 +32,7 @@ const DistanceCalculator = ({ position1, position2 }) => {
     return (
         <div>
             <h2>Jarak: {distance.toFixed(2)} km</h2>
-            <h2>Harga Gojek: {formattedPrice}</h2>
+            <h2>Harga GoRide: {formattedPrice}</h2>
         </div>
     );
 };
